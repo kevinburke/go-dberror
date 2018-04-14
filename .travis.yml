@@ -1,13 +1,14 @@
 language: go
-go_import_path: github.com/Shyp/go-dberror
+go_import_path: github.com/kevinburke/go-dberror
 
 go:
   - 1.8.x
   - 1.9.x
+  - 1.10.x
   - master
 
 addons:
-  postgresql: "9.6"
+  postgresql: "10"
 
 before_script:
   - make test-install
